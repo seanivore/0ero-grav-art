@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "../../claud-coin"
+		},
+		{
+			"path": "../../clôd"
+		},
+		{
+			"path": ".."
+		}
+	],
+    "extensions": {
+        "recommendations": [
+            "juanblanco.solidity"
+        ]
+    }
+}

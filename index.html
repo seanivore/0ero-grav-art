@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0ero Gravity Art | Bauhaus in Zero Gravity</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon/favicon.png">
+    <!-- Three.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <!-- Solana Web3.js -->
+    <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>0ero Gravity Art</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><button id="connect-wallet">Connect Wallet</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 3D Canvas for zero-gravity animation -->
+        <section id="hero">
+            <div id="canvas-container">
+                <!-- Three.js canvas will be inserted here -->
+            </div>
+            <div class="hero-content">
+                <h2>Bauhaus in Zero Gravity</h2>
+                <p>Geometric abstraction meets digital art in motion</p>
+                <a href="#gallery" class="cta-button">Explore Collection</a>
+            </div>
+        </section>
+
+        <!-- Gallery section -->
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="bauhaus-buildings">Bauhaus Buildings</button>
+                <button class="filter-btn" data-filter="geometric-abstraction">Geometric Abstraction</button>
+                <button class="filter-btn" data-filter="color-play">Color Play</button>
+            </div>
+            <div class="gallery-grid">
+                <!-- Gallery items will be dynamically populated -->
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section id="about">
+            <h2>About the Project</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>0ero Gravity Art reimagines Bauhaus design principles for the blockchain age, creating an immersive, interactive showcase for Bauhaus-inspired NFT collections.</p>
+                    <p>By liberating geometric forms from the constraints of gravity, we create a new dimension of artistic expression that honors the Bauhaus legacy while embracing web3 innovation.</p>
+                </div>
+                <div class="about-image">
+                    <img src="assets/about-image.jpg" alt="Bauhaus inspiration">
+                </div>
+            </div>
+        </section>
+
+        <!-- Collections section -->
+        <section id="collections">
+            <h2>Collections</h2>
+            <div class="collections-container">
+                <div class="collection-card">
+                    <h3>Bauhaus Buildings</h3>
+                    <img src="assets/collections/bauhaus-buildings.jpg" alt="Bauhaus Buildings">
+                    <p>Architectural visualizations exploring form, function, and space, liberated from gravitational constraints.</p>
+                    <a href="#" class="marketplace-link">View on Tensor</a>
+                </div>
+                <div class="collection-card">
+                    <h3>Geometric Abstractions</h3>
+                    <img src="assets/collections/geometric-abstractions.jpg" alt="Geometric Abstractions">
+                    <p>Pure form compositions using primary colors and basic shapes, the fundamental vocabulary of Bauhaus design.</p>
+                    <a href="#" class="marketplace-link">View on Magic Eden</a>
+                </div>
+                <div class="collection-card">
+                    <h3>Color Play</h3>
+                    <img src="assets/collections/color-play.jpg" alt="Color Play">
+                    <p>Explorations of color theory and relationships central to Bauhaus principles, presented in dynamic formats.</p>
+                    <a href="#" class="marketplace-link">View on OpenSea</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>0ero Gravity Art</h3>
+            </div>
+            <div class="footer-links">
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="https://github.com/yourusername/0ero-grav-art" target="_blank">GitHub</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" target="_blank">Twitter</a>
+                <a href="#" target="_blank">Discord</a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2024 0ero Gravity Art. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/three-scene.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/wallet.js"></script>
+</body>
+</html>
